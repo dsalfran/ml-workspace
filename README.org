@@ -1,0 +1,13 @@
+#+TITLE: Machine Learning Environment
+
+* Introduction
+
+This project is a version of the [[https://github.com/ml-tooling/ml-workspace][ML Workspace]] created by SAP developers. The container is based on Ubuntu 20.04 and uses python 3.8. I simplified the original project by removing the graphical interface, VS code server and other functionality
+
+* Highlights
+
+- Comes preinstalled with the latest versions of Tensorflow, PyTorch, Scikit-Learn and Pandas
+- Includes popular visualization libraries
+- Pre-installed NLP libraries and models (spaCy and NLTK)
+- Comes with Jupyter and Jupyerlab
+- Includes Apache Spark 3.0.0
