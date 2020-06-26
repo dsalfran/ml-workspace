@@ -144,13 +144,13 @@ RUN \
 
 #### APACHE SPARK
 ENV \
-    APACHE_SPARK_VERSION=3.0.0-preview2 \
+    APACHE_SPARK_VERSION=3.0.0 \
     HADOOP_VERSION=3.2
 
 RUN cd /tmp && \
     wget -q $(wget -qO- https://www.apache.org/dyn/closer.lua/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz\?as_json | \
     python -c "import sys, json; content=json.load(sys.stdin); print(content['preferred']+content['path_info'])") && \
-    echo "d3087223ce41a54f0cd682430449bf7c9a0224d51bb4fca2b4e3802efff497dd2941ec735ab6e788d9744aff8d6eccad73ef22e6fdf145ad3c98e87063e457f6 *spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz" | sha512sum -c - && \
+    echo "3c9bef2d002d706b5331415884d3f890ecfdd7c6a692f36ed7a981ad120b2482 *spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz" | sha512sum -c - && \
     tar xzf spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz -C /usr/local --owner root --group root --no-same-owner && \
     rm spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && \
     cd /usr/local && ln -s spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} spark
