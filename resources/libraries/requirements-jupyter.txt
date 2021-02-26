@@ -4,98 +4,389 @@
 #
 #    pip-compile requirements-jupyter.in
 #
-aiohttp==3.6.2            # via jupyter-server-proxy
-alembic==1.4.2            # via -c requirements-extra.txt, jupyterhub
-async-generator==1.10     # via jupyterhub
-async-timeout==3.0.1      # via aiohttp
-attrs==19.3.0             # via aiohttp, jsonschema
-backcall==0.1.0           # via -c requirements-extra.txt, ipython
-bleach==3.1.5             # via nbconvert
-certifi==2020.4.5.2       # via -c requirements-extra.txt, requests
-certipy==0.1.3            # via jupyterhub
-cffi==1.14.0              # via -c requirements-extra.txt, cryptography
-chardet==3.0.4            # via -c requirements-extra.txt, aiohttp, requests
-cryptography==2.9.2       # via -c requirements-extra.txt, pyopenssl
-cycler==0.10.0            # via -c requirements-extra.txt, matplotlib
-decorator==4.4.2          # via -c requirements-extra.txt, ipython, traitlets
-defusedxml==0.6.0         # via nbconvert
-entrypoints==0.3          # via -c requirements-extra.txt, jupyterhub, nbconvert
-idna==2.9                 # via -c requirements-extra.txt, requests, yarl
-ipykernel==5.3.0          # via ipympl, ipywidgets, notebook
-ipympl==0.5.6             # via -r requirements-jupyter.in
-ipython-genutils==0.2.0   # via -c requirements-extra.txt, jupyter-contrib-nbextensions, nbformat, notebook, traitlets
-ipython==7.15.0           # via -c requirements-extra.txt, ipykernel, ipywidgets, jupyter-latex-envs
-ipywidgets==7.5.1         # via ipympl, qgrid
-jedi==0.17.0              # via -c requirements-extra.txt, ipython
-jinja2==2.11.2            # via -c requirements-extra.txt, jupyterhub, jupyterlab, jupyterlab-server, nbconvert, notebook
-json5==0.9.5              # via jupyterlab-server
-jsonschema==3.2.0         # via jupyter-telemetry, jupyterlab-server, nbformat
-jupyter-client==6.1.3     # via ipykernel, jupyter-kernel-gateway, notebook
-jupyter-contrib-core==0.3.3  # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
-jupyter-core==4.6.3       # via jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-kernel-gateway, jupyter-latex-envs, jupyter-nbextensions-configurator, nbconvert, nbformat, notebook
-jupyter-highlight-selected-word==0.2.0  # via jupyter-contrib-nbextensions
-jupyter-kernel-gateway==2.4.1  # via -r requirements-jupyter.in
-jupyter-latex-envs==1.4.6  # via jupyter-contrib-nbextensions
-jupyter-nbextensions-configurator==0.4.1  # via -r requirements-jupyter.in, jupyter-contrib-nbextensions
-jupyter-server-proxy==1.5.0  # via -r requirements-jupyter.in
-jupyter-telemetry==0.1.0  # via jupyterhub
-jupyter_contrib_nbextensions==0.5.1  # via -r requirements-jupyter.in
-jupyterhub==1.1.0         # via -r requirements-jupyter.in
-jupyterlab-server==1.1.5  # via jupyterlab
-jupyterlab==2.1.4         # via -r requirements-jupyter.in
-jupytext==1.5.0           # via -r requirements-jupyter.in
-kiwisolver==1.2.0         # via -c requirements-extra.txt, matplotlib
-lxml==4.5.1               # via jupyter-contrib-nbextensions
-mako==1.1.3               # via -c requirements-extra.txt, alembic
-markupsafe==1.1.1         # via -c requirements-extra.txt, jinja2, mako
-matplotlib==3.2.2         # via -c requirements-extra.txt, ipympl
-mistune==0.8.4            # via nbconvert
-multidict==4.7.6          # via aiohttp, yarl
-nbconvert==5.6.1          # via jupyter-contrib-nbextensions, jupyter-latex-envs, notebook
-nbformat==5.0.7           # via ipywidgets, jupytext, nbconvert, notebook
-nbresuse==0.3.6           # via -r requirements-jupyter.in
-notebook==6.0.3           # via -r requirements-jupyter.in, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-kernel-gateway, jupyter-latex-envs, jupyter-nbextensions-configurator, jupyter-server-proxy, jupyterlab, jupyterlab-server, nbresuse, qgrid, widgetsnbextension
-numpy==1.18.5             # via -c requirements-extra.txt, matplotlib, pandas
-oauthlib==3.1.0           # via -c requirements-extra.txt, jupyterhub
-packaging==20.4           # via -c requirements-extra.txt, bleach
-pamela==1.0.0             # via jupyterhub
-pandas==1.0.5             # via -c requirements-extra.txt, qgrid
-pandocfilters==1.4.2      # via nbconvert
-parso==0.7.0              # via -c requirements-extra.txt, jedi
-pexpect==4.8.0            # via -c requirements-extra.txt, ipython
-pickleshare==0.7.5        # via -c requirements-extra.txt, ipython
-prometheus-client==0.8.0  # via -c requirements-extra.txt, jupyterhub, nbresuse, notebook
-prompt-toolkit==3.0.5     # via -c requirements-extra.txt, ipython
-psutil==5.7.0             # via -c requirements-extra.txt, nbresuse
-ptyprocess==0.6.0         # via -c requirements-extra.txt, pexpect, terminado
-pycparser==2.20           # via -c requirements-extra.txt, cffi
-pygments==2.6.1           # via -c requirements-extra.txt, ipython, nbconvert
-pyopenssl==19.1.0         # via certipy
-pyparsing==2.4.7          # via -c requirements-extra.txt, matplotlib, packaging
-pyrsistent==0.16.0        # via jsonschema
-python-dateutil==2.8.1    # via -c requirements-extra.txt, alembic, jupyter-client, jupyterhub, matplotlib, pandas
-python-editor==1.0.4      # via -c requirements-extra.txt, alembic
-python-json-logger==0.1.11  # via jupyter-telemetry
-pytz==2020.1              # via -c requirements-extra.txt, pandas
-pyyaml==5.3.1             # via -c requirements-extra.txt, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, jupytext
-pyzmq==19.0.1             # via jupyter-client, notebook
-qgrid==1.3.1              # via -r requirements-jupyter.in
-requests==2.23.0          # via -c requirements-extra.txt, jupyter-kernel-gateway, jupyterhub, jupyterlab-server
-ruamel.yaml.clib==0.2.0   # via ruamel.yaml
-ruamel.yaml==0.16.10      # via jupyter-telemetry
-send2trash==1.5.0         # via notebook
-simpervisor==0.3          # via jupyter-server-proxy
-six==1.15.0               # via -c requirements-extra.txt, bleach, cryptography, cycler, jsonschema, packaging, pyopenssl, pyrsistent, python-dateutil, traitlets
-sqlalchemy==1.3.13        # via -c requirements-extra.txt, alembic, jupyterhub
-terminado==0.8.3          # via notebook
-testpath==0.4.4           # via nbconvert
-tornado==6.0.4            # via -c requirements-extra.txt, ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-kernel-gateway, jupyter-nbextensions-configurator, jupyterhub, jupyterlab, notebook, terminado
-traitlets==4.3.3          # via -c requirements-extra.txt, ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-kernel-gateway, jupyter-latex-envs, jupyter-nbextensions-configurator, jupyter-telemetry, jupyterhub, nbconvert, nbformat, notebook
-urllib3==1.25.9           # via -c requirements-extra.txt, requests
-wcwidth==0.2.4            # via -c requirements-extra.txt, prompt-toolkit
-webencodings==0.5.1       # via -c requirements-extra.txt, bleach
-widgetsnbextension==3.5.1  # via ipywidgets
-yarl==1.4.2               # via aiohttp
+aiohttp==3.7.4
+    # via jupyter-server-proxy
+alembic==1.4.2
+    # via
+    #   -c requirements-extra.txt
+    #   jupyterhub
+async-generator==1.10
+    # via jupyterhub
+async-timeout==3.0.1
+    # via aiohttp
+attrs==19.3.0
+    # via
+    #   aiohttp
+    #   jsonschema
+backcall==0.1.0
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+bleach==3.1.5
+    # via nbconvert
+certifi==2020.4.5.2
+    # via
+    #   -c requirements-extra.txt
+    #   requests
+certipy==0.1.3
+    # via jupyterhub
+cffi==1.14.0
+    # via
+    #   -c requirements-extra.txt
+    #   cryptography
+chardet==3.0.4
+    # via
+    #   -c requirements-extra.txt
+    #   aiohttp
+    #   requests
+cryptography==2.9.2
+    # via
+    #   -c requirements-extra.txt
+    #   pyopenssl
+cycler==0.10.0
+    # via
+    #   -c requirements-extra.txt
+    #   matplotlib
+decorator==4.4.2
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+    #   traitlets
+defusedxml==0.6.0
+    # via nbconvert
+entrypoints==0.3
+    # via
+    #   -c requirements-extra.txt
+    #   jupyterhub
+    #   nbconvert
+idna==2.9
+    # via
+    #   -c requirements-extra.txt
+    #   requests
+    #   yarl
+ipykernel==5.3.0
+    # via
+    #   ipympl
+    #   ipywidgets
+    #   notebook
+ipympl==0.5.6
+    # via -r requirements-jupyter.in
+ipython-genutils==0.2.0
+    # via
+    #   -c requirements-extra.txt
+    #   jupyter-contrib-nbextensions
+    #   nbformat
+    #   notebook
+    #   traitlets
+ipython==7.15.0
+    # via
+    #   -c requirements-extra.txt
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-latex-envs
+ipywidgets==7.5.1
+    # via
+    #   ipympl
+    #   qgrid
+jedi==0.17.0
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+jinja2==2.11.2
+    # via
+    #   -c requirements-extra.txt
+    #   jupyterhub
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbconvert
+    #   notebook
+json5==0.9.5
+    # via jupyterlab-server
+jsonschema==3.2.0
+    # via
+    #   jupyter-telemetry
+    #   jupyterlab-server
+    #   nbformat
+jupyter-client==6.1.3
+    # via
+    #   ipykernel
+    #   jupyter-kernel-gateway
+    #   notebook
+jupyter-contrib-core==0.3.3
+    # via
+    #   jupyter-contrib-nbextensions
+    #   jupyter-nbextensions-configurator
+jupyter-core==4.6.3
+    # via
+    #   jupyter-client
+    #   jupyter-contrib-core
+    #   jupyter-contrib-nbextensions
+    #   jupyter-kernel-gateway
+    #   jupyter-latex-envs
+    #   jupyter-nbextensions-configurator
+    #   nbconvert
+    #   nbformat
+    #   notebook
+jupyter-highlight-selected-word==0.2.0
+    # via jupyter-contrib-nbextensions
+jupyter-kernel-gateway==2.4.1
+    # via -r requirements-jupyter.in
+jupyter-latex-envs==1.4.6
+    # via jupyter-contrib-nbextensions
+jupyter-nbextensions-configurator==0.4.1
+    # via
+    #   -r requirements-jupyter.in
+    #   jupyter-contrib-nbextensions
+jupyter-server-proxy==1.5.0
+    # via -r requirements-jupyter.in
+jupyter-telemetry==0.1.0
+    # via jupyterhub
+jupyter_contrib_nbextensions==0.5.1
+    # via -r requirements-jupyter.in
+jupyterhub==1.1.0
+    # via -r requirements-jupyter.in
+jupyterlab-server==1.1.5
+    # via jupyterlab
+jupyterlab==2.1.4
+    # via -r requirements-jupyter.in
+jupytext==1.5.0
+    # via -r requirements-jupyter.in
+kiwisolver==1.2.0
+    # via
+    #   -c requirements-extra.txt
+    #   matplotlib
+lxml==4.5.1
+    # via jupyter-contrib-nbextensions
+mako==1.1.3
+    # via
+    #   -c requirements-extra.txt
+    #   alembic
+markupsafe==1.1.1
+    # via
+    #   -c requirements-extra.txt
+    #   jinja2
+    #   mako
+matplotlib==3.2.2
+    # via
+    #   -c requirements-extra.txt
+    #   ipympl
+mistune==0.8.4
+    # via nbconvert
+multidict==4.7.6
+    # via
+    #   aiohttp
+    #   yarl
+nbconvert==5.6.1
+    # via
+    #   jupyter-contrib-nbextensions
+    #   jupyter-latex-envs
+    #   notebook
+nbformat==5.0.7
+    # via
+    #   ipywidgets
+    #   jupytext
+    #   nbconvert
+    #   notebook
+nbresuse==0.3.6
+    # via -r requirements-jupyter.in
+notebook==6.0.3
+    # via
+    #   -r requirements-jupyter.in
+    #   jupyter-contrib-core
+    #   jupyter-contrib-nbextensions
+    #   jupyter-kernel-gateway
+    #   jupyter-latex-envs
+    #   jupyter-nbextensions-configurator
+    #   jupyter-server-proxy
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbresuse
+    #   qgrid
+    #   widgetsnbextension
+numpy==1.18.5
+    # via
+    #   -c requirements-extra.txt
+    #   matplotlib
+    #   pandas
+oauthlib==3.1.0
+    # via
+    #   -c requirements-extra.txt
+    #   jupyterhub
+packaging==20.4
+    # via
+    #   -c requirements-extra.txt
+    #   bleach
+pamela==1.0.0
+    # via jupyterhub
+pandas==1.0.5
+    # via
+    #   -c requirements-extra.txt
+    #   qgrid
+pandocfilters==1.4.2
+    # via nbconvert
+parso==0.7.0
+    # via
+    #   -c requirements-extra.txt
+    #   jedi
+pexpect==4.8.0
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+pickleshare==0.7.5
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+prometheus-client==0.8.0
+    # via
+    #   -c requirements-extra.txt
+    #   jupyterhub
+    #   nbresuse
+    #   notebook
+prompt-toolkit==3.0.5
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+psutil==5.7.0
+    # via
+    #   -c requirements-extra.txt
+    #   nbresuse
+ptyprocess==0.6.0
+    # via
+    #   -c requirements-extra.txt
+    #   pexpect
+    #   terminado
+pycparser==2.20
+    # via
+    #   -c requirements-extra.txt
+    #   cffi
+pygments==2.6.1
+    # via
+    #   -c requirements-extra.txt
+    #   ipython
+    #   nbconvert
+pyopenssl==19.1.0
+    # via certipy
+pyparsing==2.4.7
+    # via
+    #   -c requirements-extra.txt
+    #   matplotlib
+    #   packaging
+pyrsistent==0.16.0
+    # via jsonschema
+python-dateutil==2.8.1
+    # via
+    #   -c requirements-extra.txt
+    #   alembic
+    #   jupyter-client
+    #   jupyterhub
+    #   matplotlib
+    #   pandas
+python-editor==1.0.4
+    # via
+    #   -c requirements-extra.txt
+    #   alembic
+python-json-logger==0.1.11
+    # via jupyter-telemetry
+pytz==2020.1
+    # via
+    #   -c requirements-extra.txt
+    #   pandas
+pyyaml==5.3.1
+    # via
+    #   -c requirements-extra.txt
+    #   jupyter-contrib-nbextensions
+    #   jupyter-nbextensions-configurator
+    #   jupytext
+pyzmq==19.0.1
+    # via
+    #   jupyter-client
+    #   notebook
+qgrid==1.3.1
+    # via -r requirements-jupyter.in
+requests==2.23.0
+    # via
+    #   -c requirements-extra.txt
+    #   jupyter-kernel-gateway
+    #   jupyterhub
+    #   jupyterlab-server
+ruamel.yaml==0.16.10
+    # via jupyter-telemetry
+send2trash==1.5.0
+    # via notebook
+simpervisor==0.3
+    # via jupyter-server-proxy
+six==1.15.0
+    # via
+    #   -c requirements-extra.txt
+    #   bleach
+    #   cryptography
+    #   cycler
+    #   jsonschema
+    #   packaging
+    #   pyopenssl
+    #   pyrsistent
+    #   python-dateutil
+    #   traitlets
+sqlalchemy==1.3.13
+    # via
+    #   -c requirements-extra.txt
+    #   alembic
+    #   jupyterhub
+terminado==0.8.3
+    # via notebook
+testpath==0.4.4
+    # via nbconvert
+tornado==6.0.4
+    # via
+    #   -c requirements-extra.txt
+    #   ipykernel
+    #   jupyter-client
+    #   jupyter-contrib-core
+    #   jupyter-contrib-nbextensions
+    #   jupyter-kernel-gateway
+    #   jupyter-nbextensions-configurator
+    #   jupyterhub
+    #   jupyterlab
+    #   notebook
+    #   terminado
+traitlets==4.3.3
+    # via
+    #   -c requirements-extra.txt
+    #   ipykernel
+    #   ipython
+    #   ipywidgets
+    #   jupyter-client
+    #   jupyter-contrib-core
+    #   jupyter-contrib-nbextensions
+    #   jupyter-core
+    #   jupyter-kernel-gateway
+    #   jupyter-latex-envs
+    #   jupyter-nbextensions-configurator
+    #   jupyter-telemetry
+    #   jupyterhub
+    #   nbconvert
+    #   nbformat
+    #   notebook
+typing-extensions==3.7.4.2
+    # via
+    #   -c requirements-extra.txt
+    #   aiohttp
+urllib3==1.25.9
+    # via
+    #   -c requirements-extra.txt
+    #   requests
+wcwidth==0.2.4
+    # via
+    #   -c requirements-extra.txt
+    #   prompt-toolkit
+webencodings==0.5.1
+    # via
+    #   -c requirements-extra.txt
+    #   bleach
+widgetsnbextension==3.5.1
+    # via ipywidgets
+yarl==1.4.2
+    # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
